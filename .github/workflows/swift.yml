@@ -28,7 +28,8 @@ jobs:
       uses: actions/upload-artifact@v2.2.2
       with:
         name: compiled
-        path: ~/Library/Developer/Xcode/DerivedData/SkyblockClient-*/Build/Products/Release/SkyblockClient.app
+        path: ~/Library/Developer/Xcode/DerivedData/SkyblockClient-dfoefjrechzdxxfncrxldlqimiqx/Build/Products/Release/SkyblockClient.app
+        if-no-files-found: error
   test:
     runs-on: macos-latest
     
