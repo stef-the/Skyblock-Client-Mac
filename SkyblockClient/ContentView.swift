@@ -6,23 +6,23 @@
 //
 
 import SwiftUI
-
+import Cocoa
 
 @available(OSX 11.0, *)
 struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: ContentView()){
+                NavigationLink(destination: HomeView()){
                     Label("Home", systemImage: "house")
                 }
                 Spacer()
                 Text("Installing")
                 Group{
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: Mods_UI()) {
                         Label("Mods", systemImage: "tray")
                     }
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: Texture_UI()) {
                         Label("Texture Packs", systemImage: "tray")
                     }
                 }
@@ -31,9 +31,9 @@ struct ContentView: View {
                     
                 }
                 Spacer()
-                Text("B")
+                Text("Other")
                 Group{
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: Support_UI()) {
                         Label("Support", systemImage: "message")
                     }
                     NavigationLink(destination: ContentView()) {
@@ -48,7 +48,7 @@ struct ContentView: View {
 @available(OSX 11.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        SidebarView()
+        ContentView()
     }
 }
 
