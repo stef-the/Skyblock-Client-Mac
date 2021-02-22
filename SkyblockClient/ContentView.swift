@@ -7,14 +7,39 @@
 
 import SwiftUI
 
+
 @available(OSX 11.0, *)
 struct ContentView: View {
     var body: some View {
-        Group{
-            Text("Welcome to Skyblock Client for MacOS Big Sur").padding(.all, 2.0)
-            NavigationLink(destination: SidebarView()
-                            .padding(.all, 2.0)) {
-                Label("Home", systemImage: "house")
+        NavigationView {
+            List {
+                NavigationLink(destination: ContentView()){
+                    Label("Home", systemImage: "house")
+                }
+                Spacer()
+                Text("Installing")
+                Group{
+                    NavigationLink(destination: ContentView()) {
+                        Label("Mods", systemImage: "tray")
+                    }
+                    NavigationLink(destination: ContentView()) {
+                        Label("Texture Packs", systemImage: "tray")
+                    }
+                }
+                Spacer()
+                Button("Install") {
+                    
+                }
+                Spacer()
+                Text("B")
+                Group{
+                    NavigationLink(destination: ContentView()) {
+                        Label("Support", systemImage: "message")
+                    }
+                    NavigationLink(destination: ContentView()) {
+                        Label("Share", systemImage: "square.and.arrow.up")
+                    }
+                }
             }
         }
     }
@@ -23,7 +48,7 @@ struct ContentView: View {
 @available(OSX 11.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SidebarView()
     }
 }
 
