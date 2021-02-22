@@ -21,13 +21,11 @@ jobs:
         scheme: SkyblockClient
         destination: platform=macOS
         action: build
-    - name: testing again lel
-      run: ls -R ~/Library/Developer/Xcode/DerivedData
-#     - name: Upload files
-#       uses: actions/upload-artifact@v2.2.2
-#       with:
-#         name: compiled
-#         path: ~/Library/Developer/Xcode/DerivedData/*/Build/Products/Release
+    - name: Upload files
+      uses: actions/upload-artifact@v2.2.2
+      with:
+        name: compiled
+        path: SkyblockClient/products
   test:
     runs-on: macos-latest
     
