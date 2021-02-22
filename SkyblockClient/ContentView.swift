@@ -7,16 +7,23 @@
 
 import SwiftUI
 
+@available(OSX 11.0, *)
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        Group{
+            Text("Welcome to Skyblock Client for MacOS Big Sur").padding(.all, 2.0)
+            NavigationLink(destination: SidebarView()
+                            .padding(.all, 2.0)) {
+                Label("Home", systemImage: "house")
+            }
+        }
     }
 }
 
-
+@available(OSX 11.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+

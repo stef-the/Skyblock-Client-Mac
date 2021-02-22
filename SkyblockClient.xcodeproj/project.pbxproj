@@ -14,6 +14,7 @@
 		E2DC1CC325E4238C00124016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DC1CC125E4238C00124016 /* Main.storyboard */; };
 		E2DC1CCF25E4238D00124016 /* SkyblockClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC1CCE25E4238D00124016 /* SkyblockClientTests.swift */; };
 		E2DC1CDA25E4238D00124016 /* SkyblockClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC1CD925E4238D00124016 /* SkyblockClientUITests.swift */; };
+		E2DC1CEB25E4245000124016 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC1CEA25E4245000124016 /* SidebarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		E2DC1CD525E4238D00124016 /* SkyblockClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyblockClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DC1CD925E4238D00124016 /* SkyblockClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyblockClientUITests.swift; sourceTree = "<group>"; };
 		E2DC1CDB25E4238D00124016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2DC1CEA25E4245000124016 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				E2DC1CB825E4238900124016 /* AppDelegate.swift */,
 				E2DC1CBA25E4238900124016 /* ContentView.swift */,
+				E2DC1CEA25E4245000124016 /* SidebarView.swift */,
 				E2DC1CBC25E4238C00124016 /* Assets.xcassets */,
 				E2DC1CC125E4238C00124016 /* Main.storyboard */,
 				E2DC1CC425E4238C00124016 /* Info.plist */,
@@ -267,6 +270,7 @@
 			files = (
 				E2DC1CBB25E4238900124016 /* ContentView.swift in Sources */,
 				E2DC1CB925E4238900124016 /* AppDelegate.swift in Sources */,
+				E2DC1CEB25E4245000124016 /* SidebarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

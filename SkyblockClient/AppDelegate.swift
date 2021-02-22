@@ -9,6 +9,7 @@ import Cocoa
 import SwiftUI
 
 @main
+@available(OSX 11.0, *)
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     var window: NSWindow!
