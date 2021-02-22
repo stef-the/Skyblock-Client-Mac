@@ -14,20 +14,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: ignore this just testing
-      run: xcodebuild -scheme SkyblockClient -showBuildSettings
-#     - name: Xcode build
-#       uses: sersoft-gmbh/xcodebuild-action@v1
-#       with:
-#         project: SkyblockClient.xcodeproj
-#         scheme: SkyblockClient
-#         destination: platform=macOS
-#         action: build
-#     - name: Upload files
-#       uses: actions/upload-artifact@v2.2.2
-#       with:
-#         name: compiled
-#         path: ~/Library/Developer/Xcode/DerivedData
+    - name: Xcode build
+      uses: sersoft-gmbh/xcodebuild-action@v1
+      with:
+        project: SkyblockClient.xcodeproj
+        scheme: SkyblockClient
+        destination: platform=macOS
+        action: build
+    - name: Upload files
+      uses: actions/upload-artifact@v2.2.2
+      with:
+        name: compiled
+        path: ~/Library/Developer/Xcode/DerivedData/SkyblockClient*/Build/Products/Release
   test:
     runs-on: macos-latest
     
