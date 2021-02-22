@@ -22,7 +22,7 @@ jobs:
         destination: platform=macOS
         action: build
     - name: testing again lel
-      run: ls -R .
+      run: ls -aR .
 #     - name: Upload files
 #       uses: actions/upload-artifact@v2.2.2
 #       with:
