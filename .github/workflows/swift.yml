@@ -14,6 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: testing again lel
+      run: ls -R .
     - name: Xcode build
       uses: sersoft-gmbh/xcodebuild-action@v1
       with:
@@ -21,11 +23,11 @@ jobs:
         scheme: SkyblockClient
         destination: platform=macOS
         action: build
-    - name: Upload files
-      uses: actions/upload-artifact@v2.2.2
-      with:
-        name: compiled
-        path: SkyblockClient/products
+#     - name: Upload files
+#       uses: actions/upload-artifact@v2.2.2
+#       with:
+#         name: compiled
+#         path: SkyblockClient/products
   test:
     runs-on: macos-latest
     
