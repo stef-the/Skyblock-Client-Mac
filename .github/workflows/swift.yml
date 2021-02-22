@@ -14,13 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Xcode test
-      uses: sersoft-gmbh/xcodebuild-action@v1
-      with:
-        project: SkyblockClient.xcodeproj
-        scheme: SkyblockClient
-        destination: platform=macOS
-        action: test
     - name: Xcode build
       uses: sersoft-gmbh/xcodebuild-action@v1
       with:
@@ -33,5 +26,17 @@ jobs:
       with:
         name: compiled
         path: ~/Library/Developer/Xcode/DerivedData
+  test:
+    runs-on: macos-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Xcode test
+      uses: sersoft-gmbh/xcodebuild-action@v1
+      with:
+        project: SkyblockClient.xcodeproj
+        scheme: SkyblockClient
+        destination: platform=macOS
+        action: build
         
     
