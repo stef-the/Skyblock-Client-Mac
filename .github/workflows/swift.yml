@@ -43,6 +43,6 @@ jobs:
         project: SkyblockClient.xcodeproj
         scheme: SkyblockClient
         destination: platform=macOS
-        action: build
+        action: test
         
     
