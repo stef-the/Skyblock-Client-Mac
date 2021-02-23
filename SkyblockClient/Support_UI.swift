@@ -9,11 +9,13 @@ import SwiftUI
 
 struct Support_UI: View {
     var body: some View {
-        Text("Support")
-        Button("Discord") {
-            let url = URL(string: "https://discord.gg/tN9npwSvP2")!
-            if NSWorkspace.shared.open(url) {
-                print("Url Opened")
+        HStack{
+            Text("Support")
+            Button("Discord") {
+                let url = URL(string: "http://bit.ly/Skyblock_Client-discord")!
+                if NSWorkspace.shared.open(url) {
+                    print("Url Opened")
+                }
             }
         }
     }

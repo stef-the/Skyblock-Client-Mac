@@ -9,7 +9,12 @@ import SwiftUI
 
 struct Mods_UI: View {
     var body: some View {
-        Text("Mods Page")
+        HStack {
+            Text("Texture")
+            Button("Install") {
+                
+            }
+        }
     }
 }
 

@@ -3,4 +3,54 @@
    uuid = "A27161CD-8BEA-4A9C-BD66-544228835A3A"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CBCBD2A2-443E-4FE4-9CFE-82E285D06B16"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SkyblockClient/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "CBCBD2A2-443E-4FE4-9CFE-82E285D06B16 - 6a9fcd1a201e9c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SkyblockClient.HomeView.body.getter : some"
+                  moduleName = "SkyblockClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Stef/Desktop/stefs%20folder/xCode/e/SkyblockClient/SkyblockClient/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "CBCBD2A2-443E-4FE4-9CFE-82E285D06B16 - 7339d4dde525ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt; in SkyblockClient.HomeView.body.getter : some"
+                  moduleName = "SkyblockClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Stef/Desktop/stefs%20folder/xCode/e/SkyblockClient/SkyblockClient/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "226">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
