@@ -22,17 +22,11 @@ jobs:
         destination: platform=macOS
         action: build
         configuration: Release
-#     - name: testing again lel
-#       run: ls -aR ~/Library/Developer/Xcode/DerivedData
-    - name: Archive build files
-      run: |
-        cd ~/Library/Developer/Xcode/DerivedData/SkyblockClient-dfoefjrechzdxxfncrxldlqimiqx/Build/Products/Release/SkyblockClient.app/
-        zip -r ~/SkyblockClient.app .
     - name: Upload files
       uses: actions/upload-artifact@v2.2.2
       with:
         name: compiled
-        path: ~/SkyblockClient.app
+        path: ~/Library/Developer/Xcode/DerivedData/SkyblockClient-dfoefjrechzdxxfncrxldlqimiqx/Build/Products/Release/SkyblockClient.app/
         if-no-files-found: error
   test:
     runs-on: macos-latest
