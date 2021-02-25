@@ -7,26 +7,15 @@
 
 import SwiftUI
 
-@available(OSX 11.0, *)
-struct CheckView: View {
-    var body: some View {
-        HStack {
-            Text("Texture")
-            Button("Install") {
-                
-            }
-        }
-    }
-}
-
 struct Texture_UI: View {
     var body: some View {
-        HStack {
-            Button("Install Textures") {
-                print("lol no")
+        NavigationView{
+            List{
+                Text(" Texture Page").fontWeight(.bold)
+                Spacer()
+                Button("Install") {
+                }
             }
-            Text("Texture Page")
-            
         }
     }
 }

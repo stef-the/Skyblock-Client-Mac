@@ -9,10 +9,12 @@ import SwiftUI
 
 struct Mods_UI: View {
     var body: some View {
-        HStack {
-            Text("Texture")
-            Button("Install") {
-                
+        NavigationView{
+            List{
+                Text(" Mods Page").fontWeight(.bold)
+                Spacer()
+                Button("Install") {
+                }
             }
         }
     }

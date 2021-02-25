@@ -27,8 +27,8 @@ struct ContentView: View {
                     }
                 }
                 Spacer()
-                Button("Install") {
-                    
+                Button("Install All") {
+                    print("Installing All..")
                 }
                 Spacer()
                 Text("Other")
@@ -36,8 +36,8 @@ struct ContentView: View {
                     NavigationLink(destination: Support_UI()) {
                         Label("Support", systemImage: "message")
                     }
-                    NavigationLink(destination: ContentView()) {
-                        Label("Share", systemImage: "square.and.arrow.up")
+                    NavigationLink(destination: Waiting_UI()) {
+                        Label("Waiting List", systemImage: "scribble.variable")
                     }
                 }
             }
