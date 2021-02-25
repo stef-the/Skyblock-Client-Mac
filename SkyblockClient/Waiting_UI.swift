@@ -18,6 +18,8 @@ struct Waiting_UI: View {
                     Text("Zordlan#3560")
                     Text("Sheep325#5663")
                     Text("the noob#6208")
+                    Text("Raymond_Q8#0373")
+                    Text("VIXON#3332")
                 }
             }
         }

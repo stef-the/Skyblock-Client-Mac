@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		E241ED0B25E818DD001383E6 /* Mods_UI_NEU.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ED0A25E818DD001383E6 /* Mods_UI_NEU.swift */; };
 		E241ED1325E81BD6001383E6 /* Mods_UI_SBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ED1225E81BD6001383E6 /* Mods_UI_SBA.swift */; };
 		E241ED1825E81C57001383E6 /* Mods_UI_B_Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ED1725E81C57001383E6 /* Mods_UI_B_Util.swift */; };
+		E241ED2425E83675001383E6 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = E241ED2325E83675001383E6 /* PythonKit */; };
 		E2DC1CB925E4238900124016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC1CB825E4238900124016 /* AppDelegate.swift */; };
 		E2DC1CBB25E4238900124016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC1CBA25E4238900124016 /* ContentView.swift */; };
 		E2DC1CBD25E4238C00124016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DC1CBC25E4238C00124016 /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E241ED2425E83675001383E6 /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +134,13 @@
 			path = Mods;
 			sourceTree = "<group>";
 		};
+		E241ED2825E83801001383E6 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
 		E2DC1CAC25E4238900124016 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +164,7 @@
 		E2DC1CB725E4238900124016 /* SkyblockClient */ = {
 			isa = PBXGroup;
 			children = (
+				E241ED2825E83801001383E6 /* Python */,
 				E2DC1CB825E4238900124016 /* AppDelegate.swift */,
 				E2DC1CBA25E4238900124016 /* ContentView.swift */,
 				E241ECFB25E809F7001383E6 /* Home_UI */,
@@ -214,6 +224,9 @@
 			dependencies = (
 			);
 			name = SkyblockClient;
+			packageProductDependencies = (
+				E241ED2325E83675001383E6 /* PythonKit */,
+			);
 			productName = SkyblockClient;
 			productReference = E2DC1CB525E4238900124016 /* SkyblockClient.app */;
 			productType = "com.apple.product-type.application";
@@ -285,6 +298,9 @@
 				Base,
 			);
 			mainGroup = E2DC1CAC25E4238900124016;
+			packageReferences = (
+				E241ED2225E83675001383E6 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = E2DC1CB625E4238900124016 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -668,6 +684,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E241ED2225E83675001383E6 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E241ED2325E83675001383E6 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E241ED2225E83675001383E6 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E2DC1CAD25E4238900124016 /* Project object */;
 }
