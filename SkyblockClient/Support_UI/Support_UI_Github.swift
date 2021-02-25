@@ -9,14 +9,16 @@ import SwiftUI
 
 struct Support_UI_Github: View {
     var body: some View {
-        HStack{
-            Text("Check out the code:")
+        List{
+            Text("Check out the code!").fontWeight(.semibold)
+            Spacer()
             Button("GitHub") {
                 let url = URL(string:   "http://bit.ly/Skyblock_Client-discord")!
                 if NSWorkspace.shared.open(url) {
                     print("Url Opened")
                 }
             }
+            Text("Script made by _stefthedoggo#1698 using Swift 5.3.3 with xCode _ on MacOS 11.2.1 (Big Sur), based off of Skyblock Client (Windows) by Nacrt.")
         }
     }
 }

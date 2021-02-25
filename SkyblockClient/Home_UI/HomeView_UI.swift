@@ -14,12 +14,12 @@ struct HomeView: View {
             List{
                 Text(" Home Page").fontWeight(.bold)
                 Spacer()
-                
-                Spacer()
-                Text(" Credits").fontWeight(.semibold)
-                Text(" Original idea by nacrt#0000 (Github: 'nacrt').")
-                Text(" NotEnoughUpdates (NEU): Developped by Moulberry#0000 (Github: 'Moulberry'). His website is: https://moulberry.codes/")
-                Text(" SkyBlockAddons (SBA): Developped by Biscuit#0000 (Github: 'Biscuit'). Their website is: _")
+                NavigationLink(destination: Home_UI_HowTo()) {
+                    Label("How To", systemImage: "questionmark")
+                }
+                NavigationLink(destination: Home_UI_Credits()) {
+                    Label("Credits", systemImage: "pencil.circle")
+                }
             }
         }
     }

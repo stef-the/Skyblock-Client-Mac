@@ -9,8 +9,9 @@ import SwiftUI
 
 struct Support_UI_Windows: View {
     var body: some View {
-        HStack{
-            Text("There's a Windows edition!")
+        List{
+            Text("There's a Windows edition!").fontWeight(.semibold)
+            Spacer()
             Button("GitHub") {
                 let url = URL(string:   "http://bit.ly/Skyblock_Client-discord")!
                 if NSWorkspace.shared.open(url) {

@@ -10,7 +10,8 @@ import SwiftUI
 struct Support_UI_Community: View {
     var body: some View {
         List{
-            Text("Join the Discord Community!")
+            Text("Join the Discord Community!").fontWeight(.semibold)
+            Spacer()
             Button("Discord") {
                 let url = URL(string:   "http://bit.ly/Skyblock_Client-discord")!
                 if NSWorkspace.shared.open(url) {
