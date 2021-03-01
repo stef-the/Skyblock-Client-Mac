@@ -7,12 +7,20 @@
 
 import SwiftUI
 import Cocoa
-import PythonKit
-PythonLibrary.useVersion(3, 8)
-
 
 @available(OSX 11.0, *)
 struct Mods_UI: View {
+
+    @State private var utilToggle = true
+    @State private var guiToggle = true
+    @State private var qolToggle = false
+    @State private var optifineToggle = true
+    @State private var patcherToggle = true
+    @State private var sbaToggle = false
+    @State private var neuToggle = false
+    @State private var dsmToggle = false
+    @State private var skytilsToggle = false
+    
     var body: some View {
         NavigationView {
             Form{
@@ -22,8 +30,9 @@ struct Mods_UI: View {
                     Button("Install") {
                     }
                     Section{
+                        Spacer()
+                        Text("Bundles").fontWeight(.semibold)
                         Group{
-                            Text("Bundles").fontWeight(.semibold)
                             HStack{
                                 Toggle("", isOn: $utilToggle)
                                 NavigationLink(destination: Mods_UI_B_Util()) {
@@ -32,36 +41,36 @@ struct Mods_UI: View {
                             }
                             HStack{
                                 Toggle("", isOn: $guiToggle)
-                                NavigationLink(destination: Mods_UI_B_Util()) {
+                                NavigationLink(destination: Mods_UI_B_GUI()) {
                                     Text("GUI Bundle")
                                 }
                             }
                             HStack{
                                 Toggle("", isOn: $qolToggle)
-                                NavigationLink(destination: Mods_UI_B_Util()) {
+                                NavigationLink(destination: Mods_UI_B_QOL()) {
                                     Text("QOL Bundle")
                                 }
                             }
                         }
                         Spacer()
+                        Text("Essentials").fontWeight(.semibold)
                         Group{
-                            Text("Utilities").fontWeight(.semibold)
                             HStack{
                                 Toggle("", isOn: $optifineToggle)
-                                NavigationLink(destination: Mods_UI_B_Util()) {
+                                NavigationLink(destination: Mods_UI_Optifine()) {
                                     Text("Optifine")
                                 }
                             }
                             HStack{
                                 Toggle("", isOn: $patcherToggle)
-                                NavigationLink(destination: Mods_UI_B_Util()) {
+                                NavigationLink(destination: Mods_UI_Patcher()) {
                                     Text("Patcher")
                                 }
                             }
                         }
                         Spacer()
+                        Text("Bundles").fontWeight(.semibold)
                         Group{
-                            Text("Skyblock Mods").fontWeight(.semibold)
                             HStack{
                                 Toggle("", isOn: $sbaToggle)
                                 NavigationLink(destination: Mods_UI_SBA()) {
@@ -84,42 +93,6 @@ struct Mods_UI: View {
                                 Toggle("", isOn: $skytilsToggle)
                                 NavigationLink(destination: Mods_UI_NEU()) {
                                     Text("Skytils")
-                                }
-                            }
-                            HStack{
-                                Toggle("", isOn: $apecToggle)
-                                NavigationLink(destination: Mods_UI_NEU()) {
-                                    Text("APEC")
-                                }
-                            }
-                            HStack{
-                                Toggle("", isOn: $cowlectionToggle)
-                                NavigationLink(destination: Mods_UI_NEU()) {
-                                    Text("Cowlection")
-                                }
-                            }
-                        }
-                        Spacer()
-                        Group{
-                            Text("Other").fontWeight(.semibold)
-                            HStack{
-                                Toggle("", isOn: $keystrokesToggle)
-                                NavigationLink(destination: Mods_UI_NEU()) {
-                                    Text("Keystrokes")
-                                }
-                            }
-                        }
-                        Group{
-                            HStack{
-                                Toggle("", isOn: $ctToggle)
-                                NavigationLink(destination: Mods_UI_NEU()) {
-                                    Text("ChatTriggers")
-                                }
-                            }
-                            HStack{
-                                Toggle("", isOn: $sbcustommobtexToggle)
-                                NavigationLink(destination: Mods_UI_NEU()) {
-                                    Text("SBCustomMobTex")
                                 }
                             }
                         }

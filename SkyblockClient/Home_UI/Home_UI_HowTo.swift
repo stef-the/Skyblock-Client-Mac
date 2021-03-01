@@ -9,7 +9,9 @@ import SwiftUI
 
 struct Home_UI_HowTo: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List{
+            Text("How to install Skyblock Client for Mac").fontWeight(.bold)
+        }
     }
 }
 

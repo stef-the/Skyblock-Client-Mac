@@ -14,12 +14,18 @@ struct Waiting_UI: View {
                 Text(" Notify on Release").fontWeight(.bold)
                 Spacer()
                 Group{
-                    Text("LuffyLord38#8071")
-                    Text("Zordlan#3560")
-                    Text("Sheep325#5663")
-                    Text("the noob#6208")
-                    Text("Raymond_Q8#0373")
-                    Text("VIXON#3332")
+                    VStack{
+                        Text("LuffyLord38#8071")
+                        Text("Zordlan#3560")
+                        Text("Sheep325#5663")
+                        Text("the noob#6208")
+                        Text("Raymond_Q8#0373")
+                        Text("VIXON#3332")
+                        Text("ruado_Vn#9654")
+                        Text("Quiet#9608")
+                        Text("dar#6764")
+                        Text("JustMax#5526")
+                    }
                 }
             }
         }

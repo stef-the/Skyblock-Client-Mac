@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Cocoa
+import PythonKit
+
 
 @available(OSX 11.0, *)
 struct ContentView: View {
