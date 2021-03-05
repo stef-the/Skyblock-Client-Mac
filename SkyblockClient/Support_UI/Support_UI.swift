@@ -1,10 +1,3 @@
-//
-//  Support_UI.swift
-//  SkyblockClient
-//
-//  Created by Stefan Leung on 2/22/21.
-//
-
 import SwiftUI
 
 @available(OSX 11.0, *)

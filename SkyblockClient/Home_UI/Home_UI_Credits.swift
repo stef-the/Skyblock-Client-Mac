@@ -1,10 +1,3 @@
-//
-//  Home_UI_Credits.swift
-//  SkyblockClient
-//
-//  Created by Stefan Leung on 2/25/21.
-//
-
 import SwiftUI
 
 struct Home_UI_Credits: View {

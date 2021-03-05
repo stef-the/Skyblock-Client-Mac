@@ -1,14 +1,5 @@
-//
-//  ContentView.swift
-//  SkyblockClient
-//
-//  Created by Stefan Leung on 2/22/21.
-//
-
 import SwiftUI
 import Cocoa
-import PythonKit
-
 
 @available(OSX 11.0, *)
 struct ContentView: View {

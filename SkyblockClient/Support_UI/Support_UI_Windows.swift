@@ -1,10 +1,3 @@
-//
-//  Support_UI_Windows.swift
-//  SkyblockClient
-//
-//  Created by Stefan Leung on 2/25/21.
-//
-
 import SwiftUI
 
 struct Support_UI_Windows: View {

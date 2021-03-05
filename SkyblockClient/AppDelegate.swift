@@ -1,12 +1,5 @@
-//
-//  AppDelegate.swift
-//  SkyblockClient
-//
-//  Created by Stefan Leung on 2/22/21.
-//
-
-import Cocoa
 import SwiftUI
+import Cocoa
 
 @main
 @available(OSX 11.0, *)
@@ -35,4 +28,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 }
-

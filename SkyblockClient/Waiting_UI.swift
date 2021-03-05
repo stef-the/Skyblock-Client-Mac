@@ -1,10 +1,3 @@
-//
-//  Waiting_UI.swift
-//  SkyblockClient
-//
-//  Created by Stefan Leung on 2/24/21.
-//
-
 import SwiftUI
 
 struct Waiting_UI: View {

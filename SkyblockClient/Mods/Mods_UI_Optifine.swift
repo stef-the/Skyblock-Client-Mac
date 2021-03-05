@@ -1,10 +1,3 @@
-//
-//  Mods_UI_Optifine.swift
-//  SkyblockClient
-//
-//  Created by Stefan Leung on 3/1/21.
-//
-
 import SwiftUI
 
 struct Mods_UI_Optifine: View {

@@ -1,10 +1,3 @@
-//
-//  Support_UI_Community.swift
-//  SkyblockClient
-//
-//  Created by Stefan Leung on 2/24/21.
-//
-
 import SwiftUI
 
 struct Support_UI_Community: View {

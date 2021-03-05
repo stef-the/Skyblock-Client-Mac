@@ -1,10 +1,3 @@
-//
-//  Mods_UI_SBA.swift
-//  SkyblockClient
-//
-//  Created by Stefan Leung on 2/25/21.
-//
-
 import SwiftUI
 
 struct Mods_UI_SBA: View {
