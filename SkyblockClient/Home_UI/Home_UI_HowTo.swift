@@ -2,8 +2,22 @@ import SwiftUI
 
 struct Home_UI_HowTo: View {
     var body: some View {
-        List{
-            Text("How to install Skyblock Client for Mac").fontWeight(.bold)
+        List {
+            Group {
+                Text("How to Install Mods using Skyblock Client for Mac").fontWeight(.bold)
+                Text("...")
+                Spacer()
+            }
+            Group {
+                Text("How to Install Texture Packs using Skyblock Client for Mac").fontWeight(.bold)
+                Text("...")
+                Spacer()
+            }
+            Group {
+                Text("How to Install External Mods with Skyblock Client for Mac").fontWeight(.bold)
+                Text("...")
+                Spacer()
+            }
         }
     }
 }

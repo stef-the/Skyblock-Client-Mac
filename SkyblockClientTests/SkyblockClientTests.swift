@@ -1,10 +1,3 @@
-//
-//  SkyblockClientTests.swift
-//  SkyblockClientTests
-//
-//  Created by Stefan Leung on 2/22/21.
-//
-
 import XCTest
 @testable import SkyblockClient
 

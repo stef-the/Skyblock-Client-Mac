@@ -1,10 +1,3 @@
-//
-//  SkyblockClientUITests.swift
-//  SkyblockClientUITests
-//
-//  Created by Stefan Leung on 2/22/21.
-//
-
 import XCTest
 
 class SkyblockClientUITests: XCTestCase {

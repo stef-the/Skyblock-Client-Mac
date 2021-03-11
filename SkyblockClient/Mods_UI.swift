@@ -1,9 +1,38 @@
 import SwiftUI
 import Cocoa
+import Foundation
+
+struct Mod: Decodable {
+    let id: String
+    let display: String
+    let description: String
+    let url: String?
+    let config: Bool?
+    let enabled: Bool?
+    let hidden: Bool?
+    let icon: String?
+    let categories: [String]?
+    // let actions: Array<OptionAction>?
+    // let warning: ActionWarning?
+}
+
+let modsURL = URL(string: "https://raw.githubusercontent.com/nacrt/SkyblockClient-REPO/main/files/mods.json")!
+
+func importJSON(url: URL) {
+    let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
+        if let error = error { print(error); return }
+        do {
+            let result = try JSONDecoder().decode([Mod].self, from: data!)
+            print(result)
+        } catch {print(error)}
+    }
+    task.resume()
+}
+
+let mods_json = importJSON(url: modsURL)
 
 @available(OSX 11.0, *)
 struct Mods_UI: View {
-
     @State private var utilToggle = true
     @State private var guiToggle = true
     @State private var qolToggle = false
@@ -78,13 +107,13 @@ struct Mods_UI: View {
                             }
                             HStack{
                                 Toggle("", isOn: $dsmToggle)
-                                NavigationLink(destination: Mods_UI_NEU()) {
+                                NavigationLink(destination: Mods_UI_DSM()) {
                                     Text("Danker's Skyblock Mod")
                                 }
                             }
                             HStack{
                                 Toggle("", isOn: $skytilsToggle)
-                                NavigationLink(destination: Mods_UI_NEU()) {
+                                NavigationLink(destination: Mods_UI_Skytils()) {
                                     Text("Skytils")
                                 }
                             }
