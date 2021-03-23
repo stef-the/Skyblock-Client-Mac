@@ -29,9 +29,6 @@ struct ContentView: View {
                     NavigationLink(destination: Support_UI()) {
                         Label("Support", systemImage: "message")
                     }
-                    NavigationLink(destination: Waiting_UI()) {
-                        Label("Waiting List", systemImage: "scribble.variable")
-                    }
                 }
             }
         }
