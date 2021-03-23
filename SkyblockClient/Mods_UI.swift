@@ -1,17 +1,24 @@
 import SwiftUI
 import Cocoa
 import Foundation
-
-
  
 @available(OSX 11.0, *)
 struct Mods_UI: View {
-  
+    
     @State var jsonDataList = [jsonData]()
 
+    func enabledBindingForIndex(index: Int) -> Binding<Bool> {
+        Binding<Bool> { () -> Bool in
+            return jsonDataList[index].enabled ?? false
+        } set: { (newValue) in
+            jsonDataList[index].enabled = newValue
+        }
+    }
+    
     var body: some View {
         VStack {
-            List(jsonDataList, id: \.id) { jsonDataList in
+            List(Array(jsonDataList.filter { $0.hidden != true }.enumerated()),  //<-- Here
+                 id: \.1.id) { (index,jsonDataList) in //<-- Here
                 VStack(alignment: .leading) {
                     HStack {
                         VStack(alignment: .leading) {
@@ -22,7 +29,7 @@ struct Mods_UI: View {
                                 .font(.subheadline)
                         }
                         Spacer()
-                        Image(systemName: jsonDataList.enabled ?? false ? "checkmark.square": "square")
+                        Toggle(isOn: enabledBindingForIndex(index: index)) { } //Here
                     }
                     Spacer()
                 }
@@ -50,7 +57,6 @@ struct Mods_UI: View {
         }
         task.resume()
     }
-
 }
 
 @available(OSX 11.0, *)
@@ -66,7 +72,7 @@ struct jsonData: Codable, Identifiable {
     let description: String
     let url: String?
     let config: Bool?
-    let enabled: Bool?
+    var enabled: Bool?
     let hidden: Bool?
     let icon: String?
     let categories: [String]?

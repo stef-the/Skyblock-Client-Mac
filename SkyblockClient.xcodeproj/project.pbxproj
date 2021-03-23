@@ -9,23 +9,14 @@
 /* Begin PBXBuildFile section */
 		E204DE3725E4548B00D4AFD5 /* Support_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204DE3625E4548B00D4AFD5 /* Support_UI.swift */; };
 		E204DE3C25E454C000D4AFD5 /* Mods_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204DE3B25E454C000D4AFD5 /* Mods_UI.swift */; };
-		E204DE4125E454FC00D4AFD5 /* Texture_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204DE4025E454FC00D4AFD5 /* Texture_UI.swift */; };
 		E204DE4625E4551A00D4AFD5 /* HomeView_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204DE4525E4551A00D4AFD5 /* HomeView_UI.swift */; };
 		E239045625E73FAB007EF141 /* Support_UI_Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239045525E73FAB007EF141 /* Support_UI_Community.swift */; };
 		E241ECF225E80279001383E6 /* Support_UI_Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ECF125E80279001383E6 /* Support_UI_Github.swift */; };
 		E241ECF725E802F2001383E6 /* Support_UI_Windows.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ECF625E802F2001383E6 /* Support_UI_Windows.swift */; };
 		E241ECFD25E80A15001383E6 /* Home_UI_Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ECFC25E80A15001383E6 /* Home_UI_Credits.swift */; };
 		E241ED0525E80D64001383E6 /* Home_UI_HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ED0425E80D64001383E6 /* Home_UI_HowTo.swift */; };
-		E241ED0B25E818DD001383E6 /* Mods_UI_NEU.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ED0A25E818DD001383E6 /* Mods_UI_NEU.swift */; };
-		E241ED1325E81BD6001383E6 /* Mods_UI_SBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ED1225E81BD6001383E6 /* Mods_UI_SBA.swift */; };
-		E241ED1825E81C57001383E6 /* Mods_UI_B_Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ED1725E81C57001383E6 /* Mods_UI_B_Util.swift */; };
 		E241ED2425E83675001383E6 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = E241ED2325E83675001383E6 /* PythonKit */; };
-		E2B50D8525ED5BE200F178F5 /* Mods_UI_B_GUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B50D8425ED5BE200F178F5 /* Mods_UI_B_GUI.swift */; };
-		E2B50D8A25ED5C2A00F178F5 /* Mods_UI_B_QOL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B50D8925ED5C2A00F178F5 /* Mods_UI_B_QOL.swift */; };
-		E2B50D9525ED5C9800F178F5 /* Mods_UI_Optifine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B50D9425ED5C9800F178F5 /* Mods_UI_Optifine.swift */; };
-		E2B50DA025ED5CC200F178F5 /* Mods_UI_Patcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B50D9F25ED5CC200F178F5 /* Mods_UI_Patcher.swift */; };
-		E2D3927525FA70B7001BCCB9 /* Mods_UI_DSM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3927425FA70B7001BCCB9 /* Mods_UI_DSM.swift */; };
-		E2D3927D25FA74D7001BCCB9 /* Mods_UI_Skytils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3927C25FA74D7001BCCB9 /* Mods_UI_Skytils.swift */; };
+		E2B25DC0260A59B100DF2317 /* eea.png in Resources */ = {isa = PBXBuildFile; fileRef = E2B25DBF260A59B100DF2317 /* eea.png */; };
 		E2DC1CB925E4238900124016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC1CB825E4238900124016 /* AppDelegate.swift */; };
 		E2DC1CBB25E4238900124016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC1CBA25E4238900124016 /* ContentView.swift */; };
 		E2DC1CBD25E4238C00124016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DC1CBC25E4238C00124016 /* Assets.xcassets */; };
@@ -55,22 +46,13 @@
 /* Begin PBXFileReference section */
 		E204DE3625E4548B00D4AFD5 /* Support_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support_UI.swift; sourceTree = "<group>"; };
 		E204DE3B25E454C000D4AFD5 /* Mods_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mods_UI.swift; sourceTree = "<group>"; usesTabs = 0; };
-		E204DE4025E454FC00D4AFD5 /* Texture_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texture_UI.swift; sourceTree = "<group>"; };
 		E204DE4525E4551A00D4AFD5 /* HomeView_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView_UI.swift; sourceTree = "<group>"; };
 		E239045525E73FAB007EF141 /* Support_UI_Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support_UI_Community.swift; sourceTree = "<group>"; };
 		E241ECF125E80279001383E6 /* Support_UI_Github.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support_UI_Github.swift; sourceTree = "<group>"; };
 		E241ECF625E802F2001383E6 /* Support_UI_Windows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support_UI_Windows.swift; sourceTree = "<group>"; };
 		E241ECFC25E80A15001383E6 /* Home_UI_Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_UI_Credits.swift; sourceTree = "<group>"; };
 		E241ED0425E80D64001383E6 /* Home_UI_HowTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_UI_HowTo.swift; sourceTree = "<group>"; };
-		E241ED0A25E818DD001383E6 /* Mods_UI_NEU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mods_UI_NEU.swift; sourceTree = "<group>"; };
-		E241ED1225E81BD6001383E6 /* Mods_UI_SBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mods_UI_SBA.swift; sourceTree = "<group>"; };
-		E241ED1725E81C57001383E6 /* Mods_UI_B_Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mods_UI_B_Util.swift; sourceTree = "<group>"; };
-		E2B50D8425ED5BE200F178F5 /* Mods_UI_B_GUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mods_UI_B_GUI.swift; sourceTree = "<group>"; };
-		E2B50D8925ED5C2A00F178F5 /* Mods_UI_B_QOL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mods_UI_B_QOL.swift; sourceTree = "<group>"; };
-		E2B50D9425ED5C9800F178F5 /* Mods_UI_Optifine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mods_UI_Optifine.swift; sourceTree = "<group>"; };
-		E2B50D9F25ED5CC200F178F5 /* Mods_UI_Patcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mods_UI_Patcher.swift; sourceTree = "<group>"; };
-		E2D3927425FA70B7001BCCB9 /* Mods_UI_DSM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mods_UI_DSM.swift; sourceTree = "<group>"; };
-		E2D3927C25FA74D7001BCCB9 /* Mods_UI_Skytils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mods_UI_Skytils.swift; sourceTree = "<group>"; };
+		E2B25DBF260A59B100DF2317 /* eea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eea.png; path = ../../../../../../Downloads/eea.png; sourceTree = "<group>"; };
 		E2DC1CB525E4238900124016 /* SkyblockClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyblockClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DC1CB825E4238900124016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2DC1CBA25E4238900124016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,22 +116,6 @@
 			path = Home_UI;
 			sourceTree = "<group>";
 		};
-		E241ED0925E818CB001383E6 /* Mods */ = {
-			isa = PBXGroup;
-			children = (
-				E241ED1725E81C57001383E6 /* Mods_UI_B_Util.swift */,
-				E2B50D8425ED5BE200F178F5 /* Mods_UI_B_GUI.swift */,
-				E2B50D8925ED5C2A00F178F5 /* Mods_UI_B_QOL.swift */,
-				E2B50D9425ED5C9800F178F5 /* Mods_UI_Optifine.swift */,
-				E2B50D9F25ED5CC200F178F5 /* Mods_UI_Patcher.swift */,
-				E241ED1225E81BD6001383E6 /* Mods_UI_SBA.swift */,
-				E241ED0A25E818DD001383E6 /* Mods_UI_NEU.swift */,
-				E2D3927425FA70B7001BCCB9 /* Mods_UI_DSM.swift */,
-				E2D3927C25FA74D7001BCCB9 /* Mods_UI_Skytils.swift */,
-			);
-			path = Mods;
-			sourceTree = "<group>";
-		};
 		E2DC1CAC25E4238900124016 = {
 			isa = PBXGroup;
 			children = (
@@ -177,10 +143,9 @@
 				E2DC1CBA25E4238900124016 /* ContentView.swift */,
 				E241ECFB25E809F7001383E6 /* Home_UI */,
 				E204DE3B25E454C000D4AFD5 /* Mods_UI.swift */,
-				E241ED0925E818CB001383E6 /* Mods */,
-				E204DE4025E454FC00D4AFD5 /* Texture_UI.swift */,
 				E239045A25E73FD6007EF141 /* Support_UI */,
 				E2DC1CBC25E4238C00124016 /* Assets.xcassets */,
+				E2B25DBF260A59B100DF2317 /* eea.png */,
 				E2DC1CC125E4238C00124016 /* Main.storyboard */,
 				E2DC1CC425E4238C00124016 /* Info.plist */,
 				E2DC1CC525E4238C00124016 /* SkyblockClient.entitlements */,
@@ -325,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DC1CC325E4238C00124016 /* Main.storyboard in Resources */,
+				E2B25DC0260A59B100DF2317 /* eea.png in Resources */,
 				E2DC1CC025E4238C00124016 /* Preview Assets.xcassets in Resources */,
 				E2DC1CBD25E4238C00124016 /* Assets.xcassets in Resources */,
 			);
@@ -352,25 +318,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E241ECF725E802F2001383E6 /* Support_UI_Windows.swift in Sources */,
-				E2B50D9525ED5C9800F178F5 /* Mods_UI_Optifine.swift in Sources */,
-				E2B50D8A25ED5C2A00F178F5 /* Mods_UI_B_QOL.swift in Sources */,
-				E2B50D8525ED5BE200F178F5 /* Mods_UI_B_GUI.swift in Sources */,
-				E204DE4125E454FC00D4AFD5 /* Texture_UI.swift in Sources */,
 				E204DE3C25E454C000D4AFD5 /* Mods_UI.swift in Sources */,
-				E241ED0B25E818DD001383E6 /* Mods_UI_NEU.swift in Sources */,
-				E2D3927D25FA74D7001BCCB9 /* Mods_UI_Skytils.swift in Sources */,
 				E241ECFD25E80A15001383E6 /* Home_UI_Credits.swift in Sources */,
 				E239045625E73FAB007EF141 /* Support_UI_Community.swift in Sources */,
-				E241ED1825E81C57001383E6 /* Mods_UI_B_Util.swift in Sources */,
 				E204DE3725E4548B00D4AFD5 /* Support_UI.swift in Sources */,
 				E204DE4625E4551A00D4AFD5 /* HomeView_UI.swift in Sources */,
 				E241ED0525E80D64001383E6 /* Home_UI_HowTo.swift in Sources */,
-				E2B50DA025ED5CC200F178F5 /* Mods_UI_Patcher.swift in Sources */,
 				E241ECF225E80279001383E6 /* Support_UI_Github.swift in Sources */,
 				E2DC1CBB25E4238900124016 /* ContentView.swift in Sources */,
 				E2DC1CB925E4238900124016 /* AppDelegate.swift in Sources */,
-				E241ED1325E81BD6001383E6 /* Mods_UI_SBA.swift in Sources */,
-				E2D3927525FA70B7001BCCB9 /* Mods_UI_DSM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

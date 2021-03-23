@@ -10,21 +10,16 @@ struct ContentView: View {
                     Label("Home", systemImage: "house")
                 }
                 Spacer()
-                Text("Installing")
-                Group{
-                    NavigationLink(destination: Mods_UI()) {
-                        Label("Mods", systemImage: "tray")
-                    }
-                    NavigationLink(destination: Texture_UI()) {
-                        Label("Texture Packs", systemImage: "tray")
-                    }
+                Text("Installing").fontWeight(.semibold)
+                NavigationLink(destination: Mods_UI()) {
+                    Label("Mods", systemImage: "tray")
                 }
                 Spacer()
                 Button("Install All") {
                     print("Installing All..")
                 }
                 Spacer()
-                Text("Other")
+                Text("Other").fontWeight(.semibold)
                 Group{
                     NavigationLink(destination: Support_UI()) {
                         Label("Support", systemImage: "message")
