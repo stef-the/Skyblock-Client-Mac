@@ -16,22 +16,24 @@ struct Mods_UI: View {
     }
     
     var body: some View {
-        VStack {
+        NavigationView {
             List(Array(jsonDataList.filter { $0.hidden != true }.enumerated()),  //<-- Here
-                 id: \.1.id) { (index,jsonDataList) in //<-- Here
-                VStack(alignment: .leading) {
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(jsonDataList.display)
-                                .font(.title3)
-                                .fontWeight(.bold)
-                            Text(String(jsonDataList.description))
-                                .font(.subheadline)
+                 id: \.1.id) { (index, jsonDataList) in //<-- Here
+                NavigationLink(destination: MarkdownView(item: String(jsonDataList.id))) {
+                    VStack(alignment: .leading) {
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(jsonDataList.display)
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                Text(String(jsonDataList.description))
+                                    .font(.subheadline)
+                            }
+                            Spacer()
+                            Toggle(isOn: enabledBindingForIndex(index: index)) { } //Here
                         }
                         Spacer()
-                        Toggle(isOn: enabledBindingForIndex(index: index)) { } //Here
                     }
-                    Spacer()
                 }
             }
             .onAppear(perform: loadData)
@@ -39,7 +41,6 @@ struct Mods_UI: View {
     }
 
     func loadData() {
-
         guard let modsURL = URL(string: "https://raw.githubusercontent.com/nacrt/SkyblockClient-REPO/main/files/mods.json") else {
             print("Invalid URL")
             return
@@ -50,7 +51,6 @@ struct Mods_UI: View {
             do {
                 let result = try JSONDecoder().decode([jsonData].self, from: data!)
                 jsonDataList = result
-                print("Response:",jsonDataList)
             } catch {
                 print(error)
             }
