@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "PythonKit",
-        "repositoryURL": "https://github.com/pvieito/PythonKit",
+        "package": "Down",
+        "repositoryURL": "https://github.com/johnxnguyen/Down",
         "state": {
-          "branch": "master",
-          "revision": "2615c8921d58cf46117291f7aae280fbe6b56622",
-          "version": null
+          "branch": null,
+          "revision": "0bcd20dc56ad7fd47bbb99a1d2302a8bfa43b6d0",
+          "version": "0.10.0"
         }
       }
     ]
