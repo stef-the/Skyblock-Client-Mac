@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E204A603260CE6F1006C0155 /* Down in Frameworks */ = {isa = PBXBuildFile; productRef = E204A602260CE6F1006C0155 /* Down */; };
 		E204DE3725E4548B00D4AFD5 /* Support_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204DE3625E4548B00D4AFD5 /* Support_UI.swift */; };
 		E204DE3C25E454C000D4AFD5 /* Mods_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204DE3B25E454C000D4AFD5 /* Mods_UI.swift */; };
 		E204DE4625E4551A00D4AFD5 /* HomeView_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204DE4525E4551A00D4AFD5 /* HomeView_UI.swift */; };
@@ -15,8 +16,7 @@
 		E241ECF725E802F2001383E6 /* Support_UI_Windows.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ECF625E802F2001383E6 /* Support_UI_Windows.swift */; };
 		E241ECFD25E80A15001383E6 /* Home_UI_Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ECFC25E80A15001383E6 /* Home_UI_Credits.swift */; };
 		E241ED0525E80D64001383E6 /* Home_UI_HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E241ED0425E80D64001383E6 /* Home_UI_HowTo.swift */; };
-		E241ED2425E83675001383E6 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = E241ED2325E83675001383E6 /* PythonKit */; };
-		E2B25DC0260A59B100DF2317 /* eea.png in Resources */ = {isa = PBXBuildFile; fileRef = E2B25DBF260A59B100DF2317 /* eea.png */; };
+		E2C7F8E5260C19AD004D286E /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C7F8E4260C19AD004D286E /* MarkdownView.swift */; };
 		E2DC1CB925E4238900124016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC1CB825E4238900124016 /* AppDelegate.swift */; };
 		E2DC1CBB25E4238900124016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC1CBA25E4238900124016 /* ContentView.swift */; };
 		E2DC1CBD25E4238C00124016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DC1CBC25E4238C00124016 /* Assets.xcassets */; };
@@ -52,7 +52,7 @@
 		E241ECF625E802F2001383E6 /* Support_UI_Windows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support_UI_Windows.swift; sourceTree = "<group>"; };
 		E241ECFC25E80A15001383E6 /* Home_UI_Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_UI_Credits.swift; sourceTree = "<group>"; };
 		E241ED0425E80D64001383E6 /* Home_UI_HowTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_UI_HowTo.swift; sourceTree = "<group>"; };
-		E2B25DBF260A59B100DF2317 /* eea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eea.png; path = ../../../../../../Downloads/eea.png; sourceTree = "<group>"; };
+		E2C7F8E4260C19AD004D286E /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
 		E2DC1CB525E4238900124016 /* SkyblockClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyblockClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DC1CB825E4238900124016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2DC1CBA25E4238900124016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E241ED2425E83675001383E6 /* PythonKit in Frameworks */,
+				E204A603260CE6F1006C0155 /* Down in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,9 +143,9 @@
 				E2DC1CBA25E4238900124016 /* ContentView.swift */,
 				E241ECFB25E809F7001383E6 /* Home_UI */,
 				E204DE3B25E454C000D4AFD5 /* Mods_UI.swift */,
+				E2C7F8E4260C19AD004D286E /* MarkdownView.swift */,
 				E239045A25E73FD6007EF141 /* Support_UI */,
 				E2DC1CBC25E4238C00124016 /* Assets.xcassets */,
-				E2B25DBF260A59B100DF2317 /* eea.png */,
 				E2DC1CC125E4238C00124016 /* Main.storyboard */,
 				E2DC1CC425E4238C00124016 /* Info.plist */,
 				E2DC1CC525E4238C00124016 /* SkyblockClient.entitlements */,
@@ -197,7 +197,7 @@
 			);
 			name = SkyblockClient;
 			packageProductDependencies = (
-				E241ED2325E83675001383E6 /* PythonKit */,
+				E204A602260CE6F1006C0155 /* Down */,
 			);
 			productName = SkyblockClient;
 			productReference = E2DC1CB525E4238900124016 /* SkyblockClient.app */;
@@ -271,7 +271,7 @@
 			);
 			mainGroup = E2DC1CAC25E4238900124016;
 			packageReferences = (
-				E241ED2225E83675001383E6 /* XCRemoteSwiftPackageReference "PythonKit" */,
+				E204A601260CE6F1006C0155 /* XCRemoteSwiftPackageReference "Down" */,
 			);
 			productRefGroup = E2DC1CB625E4238900124016 /* Products */;
 			projectDirPath = "";
@@ -290,7 +290,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DC1CC325E4238C00124016 /* Main.storyboard in Resources */,
-				E2B25DC0260A59B100DF2317 /* eea.png in Resources */,
 				E2DC1CC025E4238C00124016 /* Preview Assets.xcassets in Resources */,
 				E2DC1CBD25E4238C00124016 /* Assets.xcassets in Resources */,
 			);
@@ -326,6 +325,7 @@
 				E241ED0525E80D64001383E6 /* Home_UI_HowTo.swift in Sources */,
 				E241ECF225E80279001383E6 /* Support_UI_Github.swift in Sources */,
 				E2DC1CBB25E4238900124016 /* ContentView.swift in Sources */,
+				E2C7F8E5260C19AD004D286E /* MarkdownView.swift in Sources */,
 				E2DC1CB925E4238900124016 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,21 +654,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E241ED2225E83675001383E6 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+		E204A601260CE6F1006C0155 /* XCRemoteSwiftPackageReference "Down" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pvieito/PythonKit";
+			repositoryURL = "https://github.com/johnxnguyen/Down";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E241ED2325E83675001383E6 /* PythonKit */ = {
+		E204A602260CE6F1006C0155 /* Down */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E241ED2225E83675001383E6 /* XCRemoteSwiftPackageReference "PythonKit" */;
-			productName = PythonKit;
+			package = E204A601260CE6F1006C0155 /* XCRemoteSwiftPackageReference "Down" */;
+			productName = Down;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
