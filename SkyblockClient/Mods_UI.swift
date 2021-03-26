@@ -17,8 +17,7 @@ struct Mods_UI: View {
     
     var body: some View {
         NavigationView {
-            List(Array(jsonDataList.filter { $0.hidden != true }.enumerated()),  //<-- Here
-                 id: \.1.id) { (index, jsonDataList) in //<-- Here
+            List(Array(jsonDataList.filter { $0.hidden != true }.enumerated()), id: \.1.id) { (index, jsonDataList) in
                 NavigationLink(destination: MarkdownView(item: String(jsonDataList.id))) {
                     VStack(alignment: .leading) {
                         HStack {
