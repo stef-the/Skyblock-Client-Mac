@@ -1,10 +1,4 @@
-//
-//  MarkdownView.swift
-//  SkyblockClient
-//
-//  Created by Stefan Leung on 3/24/21.
-//
-
+/*
 import SwiftUI
 
 struct MarkdownView: View {
@@ -30,6 +24,7 @@ struct MarkdownView: View {
 
 struct MarkdownView_Previews: PreviewProvider {
     static var previews: some View {
-        MarkdownView(output: "String", item: "String")
+        MarkdownView(item: "String")
     }
 }
+*/
