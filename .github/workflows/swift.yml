@@ -5,6 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,20 +14,35 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup Xcode
-      # You may pin to the exact commit or the version.
-      # uses: sinoru/actions-setup-xcode@c1ccec544dad194d713c8a5288f0d90eff82721c
-      uses: sinoru/actions-setup-xcode@v1.1.2
+    - name: Xcode build
+      uses: sersoft-gmbh/xcodebuild-action@v1
       with:
-        xcode-version: '12.4'
-        apple-id: ${{ secrets.APPLE_ID }}
-        apple-id-password: ${{ secrets.APPLE_ID_PASSWORD }}
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
-    - name: Upload built files
-      uses: actions/upload-artifact@v2
+        project: SkyblockClient.xcodeproj
+        scheme: SkyblockClient
+        destination: platform=macOS
+        action: build
+        configuration: Release
+    - name: Set up files
+      run: |
+        mkdir ~/upload
+        cp -R ~/Library/Developer/Xcode/DerivedData/SkyblockClient-dfoefjrechzdxxfncrxldlqimiqx/Build/Products/Release/SkyblockClient.app/ ~/upload/SkyblockClient.app
+    - name: Upload files
+      uses: actions/upload-artifact@v2.2.2
       with:
-        name: compiled
-        path: .build
+        name: SkyblockClient
+        path: ~/upload
+        if-no-files-found: error
+  test:
+    runs-on: macos-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Xcode test
+      uses: sersoft-gmbh/xcodebuild-action@v1
+      with:
+        project: SkyblockClient.xcodeproj
+        scheme: SkyblockClient
+        destination: platform=macOS
+        action: test
+        
+    
